@@ -1,4 +1,5 @@
 @import url(style/header.css);
+@import url(style/banner.css);
 
 :root{
     --cor-de-fundo: #EBECEE;
@@ -10,7 +11,9 @@
 
 body{
     background-color: var(--cor-de-fundo);
-    font-family: var();
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .cabecalho_menu-hamburguer{
@@ -49,6 +52,7 @@ body{
 .container_botao:checked ~.lista_menu{
     display: block;
 }
+
 .lista_menu-titulo, .lista_menu-item {
     padding: 1em;
     background-color:  var(--braco);
@@ -59,9 +63,6 @@ body{
 .lista_menu-titulo{
     color:var(--laranja)
 }
-
-
-
 
 .lista_menu-link{
     background-color: var(--azul-degrade);
